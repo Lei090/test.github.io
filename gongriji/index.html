@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="auto">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0, interactive-widget=resizes-content">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="工日记：在手机上点几下就记好谁在哪天去了哪个工地，自动统计每人每月工日。数据只保存在本机。">
+  <meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101713" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="工日记">
+  <meta name="format-detection" content="telephone=no">
+  <title>工日记 · 记工与统计</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./favicon.ico" sizes="32x32">
+  <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app" class="app-shell"></div>
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="false"></div>
+  <dialog id="modal" class="modal"></dialog>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <noscript>
+    <div style="padding:32px;font-family:sans-serif;line-height:1.8">
+      工日记需要启用 JavaScript 才能使用。请在浏览器设置中开启后重新打开。
+    </div>
+  </noscript>
+  <script src="./app.js"></script>
+</body>
+</html>
